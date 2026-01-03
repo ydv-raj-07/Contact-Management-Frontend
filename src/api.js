@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://contact-management-backend-i4k5.onrender.com/api",
 });
 
 // har request ke saath token attach
