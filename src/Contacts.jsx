@@ -60,6 +60,25 @@ export default function Contacts() {
     <div className="card">
       <h2>My Contacts</h2>
 
+      <button
+        style={{
+          marginBottom: "15px",
+          background: "#ff4d4f",
+          color: "white",
+          border: "none",
+          padding: "8px 12px",
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          localStorage.removeItem("token");
+          window.location.reload();
+        }}
+      >
+        Logout
+      </button>
+
+
+
       <input
         placeholder="Contact name"
         value={name}
